@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="grid">App Save College</h1>
+    
+    <p>Olá. Primeiro confira o Console clicando em F12 para receber os resultados da aplicação. </p>
+    <br>
+    <br>
+    <p>Na sequência clique no botão abaixo e acesse o Desafio do Professor.</p>
+ 
+</body>
+
+<script>
+
+    var classList = [
+        {
+            name: "Daniel",
+            height: 1.75,
+            age: 39,
+            genre: "Masculino",
+            class: "Trindade",
+            mathNote: 50,
+        },
+        {
+            name: "William",
+            height: 1.70,
+            age: 32,
+            genre: "Masculino",
+            class: "Coqueiros",
+            mathNote: 80,
+        },
+        {
+            name: "Emily",
+            height: 1.65,
+            age: 25,
+            genre: "Feminino",
+            class: "Centro",
+            mathNote: 40,
+        }
+    ];
+
+    console.log(classList[0].name);
+    console.log(classList[1].name);
+    console.log(classList[2].name);
+
+    console.log(classList[0].height);
+    console.log(classList[1].height);
+    console.log(classList[2].height);
+
+    console.log(classList[0].age);
+    console.log(classList[1].age);
+    console.log(classList[2].age);
+
+    console.log(classList[0].genre);
+    console.log(classList[1].genre);
+    console.log(classList[2].genre);
+
+    console.log(classList[0].class);
+    console.log(classList[1].class);
+    console.log(classList[2].class);
+
+    var media = (classList[0].mathNote + classList[1].mathNote + classList[2].mathNote) / 3
+    console.log(media)
+
+    function professora (aluno, nota){
+        if (nota > 70) {
+            return `${aluno} está APROVADO(A)`;
+        }else {
+            return `${aluno} Está REPROVADO(A)`;
+            }
+        }
+    console.log(professora(classList[0].name, classList[0].mathNote));
+
+    console.log(professora(classList[1].name, classList[1].mathNote));
+
+    console.log(professora(classList[2].name, classList[2].mathNote));
+   
+</script>
+
+<button type="submit" onclick="window.open('./desafio.html')">Ir para o DESAFIO do Professor</button>
+
+</html>
