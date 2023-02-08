@@ -41,6 +41,18 @@ var schoolList = [
 
 
 
+  
+    schoolList.forEach((student) => {
+
+      if (student.mathNote >= 70) {
+        console.log(`O Aluno ${student.name} está aprovado`);
+      } else {
+        console.log(`O Aluno ${student.name} está reprovado`);
+      }
+    });
+
+    
+
     
 /*         do {
             if (`${schoolList[0].mathNote}` >= 70) {
@@ -67,17 +79,14 @@ var schoolList = [
         }while (schoolList.mathNote < 70); */
 
 
-
-        schoolList.mathNote.forEach((`${schoolList.mathNote}` >= 70) => {
+/* 
+        schoolList.forEach((stundent) => {
             if (schoolList.mathNote >= 70) {
             console.log(`O Aluno ${schoolList.name} está aprovado`)
         }else {
             console.log(`O Aluno ${schoolList.name} está reprovado`)
-        }});
+        }}); */
         
-       
-
-    
 
 
    /*      while ( schoolList.mathNote < 70) {
