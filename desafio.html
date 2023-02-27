@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá!</h1>
+</body>
+
+<script>
+
+var schoolList = [
+        {
+            name: "Daniel",
+            height: 1.75,
+            age: 39,
+            genre: "Masculino",
+            class: "Trindade",
+            mathNote: 80,
+        },
+        {
+            name: "William",
+            height: 1.70,
+            age: 32,
+            genre: "Masculino",
+            class: "Coqueiros",
+            mathNote: 80,
+        },
+        {
+            name: "Emily",
+            height: 1.65,
+            age: 25,
+            genre: "Feminino",
+            class: "Centro",
+            mathNote: 50,
+        }
+    ];
+
+
+    schoolList.forEach((student) => {
+
+      if (student.mathNote >= 70) {
+        console.log(`O Aluno ${student.name} está aprovado`);
+      } else {
+        console.log(`O Aluno ${student.name} está reprovado`);
+      }
+    });
+
+    
+
+    
+</script>
+</html>
